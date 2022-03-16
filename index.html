@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+  scroll-behavior: smooth;
+}
+    </style>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
+    <title>Shreemate Pathology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+     function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
+    </script>
+  </head>
+  <body>
+    <div class="relative bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+        >
+          <svg
+            class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+            fill="currentColor"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <polygon points="50,0 100,0 50,100 0,100" />
+          </svg>
+
+          <div>
+            <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+              <nav
+                class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                aria-label="Global"
+              >
+                <div
+                  class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
+                >
+                  <div
+                    class="flex items-center justify-between w-full md:w-auto"
+                  >
+                    <a href="#">
+                      <span class="sr-only">Workflow</span>
+                      <img
+                        class="h-8 w-auto sm:h-10"
+                        src="fav/icon-modified.png"
+                      />
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                      <button
+                        onclick="myFunction()"
+                        type="button"
+                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        aria-expanded="false"
+                      >
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Heroicon name: outline/menu -->
+                        <svg
+                          class="h-6 w-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+
+                  <a
+                    href="#services"
+                    class="font-medium text-gray-500 hover:text-gray-900"
+                    >Services</a
+                  >
+
+                  <a
+                    href="#features"
+                    class="font-medium text-gray-500 hover:text-gray-900"
+                    >Features</a
+                  >
+
+                  <a
+                    href="#contact"
+                    class="font-medium text-indigo-600 hover:text-indigo-500"
+                    >Contact Us</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            <!--
+          Mobile menu, show/hide based on menu open state.
+
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+            <div
+            id="myDIV"
+              class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+            >
+              <div
+                class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+              >
+                <div class="px-5 pt-4 flex items-center justify-between">
+                  <div>
+                    <img
+                      class="h-8 w-auto"
+                      src="fav/icon-modified.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="-mr-2">
+                    <button
+                      onclick="myFunction()"
+                      type="button"
+                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    >
+                      <span class="sr-only">Close main menu</span>
+                      <!-- Heroicon name: outline/x -->
+                      <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                  
+
+                  <a
+                    href="#services"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >Services</a
+                  >
+
+                  <a
+                    href="#features"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >Features</a
+                  >
+                </div>
+                <a
+                  href="#contact"
+                  class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <main
+            class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+          >
+            <div class="sm:text-center lg:text-left">
+              <h1
+                class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
+              >
+                <span class="block xl:inline">All your pathology tests</span>
+                <span class="block text-indigo-600 xl:inline"
+                  >in your vicinity.</span
+                >
+              </h1>
+              <p
+                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+              >
+                Schedule a home collection, walk in, or send your samples, we
+                are ready to serve you 24 X 7. We are Shreemate Pathalogy we
+                diagnose and provide accurate, specific and sufficiently
+                comprehensive diagnoses.
+              </p>
+              <div
+                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+              >
+                <div class="rounded-md shadow">
+                  <a
+                    href="#contact"
+                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                  >
+                  
+                    Schedule sample collection
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img
+          class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+          src="img/Lab.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <section id="services" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div
+          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+        >
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+          >
+            Services We Offer
+          </h1>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+            We are one of the most trusted, one-stop solutions for all complex
+            pathology tests. Our offerings include utter range of all kinds of
+            tests and reports from the comfort of your home and get the test
+            reports online.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                  Hematology
+              </h2>
+              <p class="leading-relaxed text-base">
+               
+               CBC, Hb, T&D, MP ESR, Platelets, Blood Group & Rh. PT PTT, BTCT, MP by QBC, mp Antigen.</li>
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path
+                    d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Serology
+              </h2>
+              <p class="leading-relaxed text-base">
+                MT, WIDAL, VDRL, HIV, HbsAg, ASO, RA, CRP & All Serological Test.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Clinical Pathology & Micro Biology
+                 
+              </h2>
+              <p class="leading-relaxed text-base">
+                Urine RIM & C/S, Stool RIM & C/S PUS C/S, SPUTUM R/M & C/S BoIld C/S, CSF RIM & C/S & All Microbiology Investigation.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                All Profiles
+              </h2>
+              <p class="leading-relaxed text-base">
+                Antenatal Profile Lipid Profile, Liver Function Test (LFT) Pre Operative Profile, Renal Function Test (RFT). 
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Special Tests
+              </h2>
+              <p class="leading-relaxed text-base">
+                T3 T4 TSH, FSH, LH, Prolactin TORCH (lgG/lgM), PSA (All Special Tests).
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Biochemical Tests
+              </h2>
+              <p class="leading-relaxed text-base">
+                Blood Sugar (FBS/PPBS/RBS) Glycosylated Hb, BUN, Urea, Creatinine, S.G.P.T., SGOT, S.Billirubin, Total Protein (A.G.), Alkaline/AcidPhos, G6PD. CPK-MB/NAC, LDH, Tropi Electolyte, (Na+ K+ Cl-), Calcium, Cholesterol, HDL, TG, All Biochemical Test. 
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        ><a href="#contact">
+          Book a test
+        </a>
+        </button>
+      </div>
+    </section>
+
+    <section class="text-gray-600 body-font" id="features">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Why Choose Us?</h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">At Shreemate Pathology Laboratory you will find a perfect balance of quality tests with accuracy and precision.</p>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Experienced Staff</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Equipped With Modern Technology</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Cost Efficient</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Trusted By Doctors</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Variety Of Tests</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Home Sample Collection</span>
+            </div>
+          </div>
+        </div>
+         </div>
+    </section>
+
+    <footer class="text-gray-600 body-font" id="contact">
+      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="fav/icon-modified.png" alt="Shreemate_Logo">
+         </a>
+          <p class="mt-2 text-sm text-gray-500"></p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us:</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="tel:+918839817045">+91 8839817045</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Visit Us:</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Parasram Marg, Gandhi Nagar, Indore, Madhya Pradesh 453112 </a>
+              </li>
+              </nav>
+            </div>
+    </footer>
+  </body>
+</html>
